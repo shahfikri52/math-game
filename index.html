@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Math Quiz - Math Blitz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Math Blitz!</h1>
+        <div class="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time Left: <span id="time-left">30</span>s</p>
+        </div>
+
+        <div class="game-area">
+            <p id="question">Loading question...</p>
+            <input type="number" id="answer-input" placeholder="Enter your answer" autocomplete="off" required>
+            <button id="submit-button">Submit Answer</button>
+            <p id="feedback" class="feedback"></p>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h2>Time's Up! ⏱️</h2>
+            <p>Your final score is: <span id="final-score">0</span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
